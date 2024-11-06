@@ -1,3 +1,4 @@
+/* Reset some default styling */
 * {
     margin: 0;
     padding: 0;
@@ -5,45 +6,105 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: #f3f7fa;
     padding: 20px;
   }
   
-  header, footer {
+  /* Header Styling */
+  header {
     text-align: center;
-    margin-bottom: 20px;
+    padding: 2rem 0;
+    background-color: #007acc;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 2rem;
   }
   
   header h1 {
-    color: #4CAF50;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
   }
   
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Main Section Styling */
   main {
     max-width: 800px;
     margin: auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  section {
-    margin-bottom: 20px;
+  /* Section Headers */
+  section h2 {
+    font-size: 1.8rem;
+    color: #007acc;
+    margin-bottom: 0.8rem;
+    border-bottom: 3px solid #007acc;
+    padding-bottom: 0.2rem;
   }
   
-  ul {
+  /* Project List Styling */
+  #projects ul {
     list-style-type: none;
+    padding: 0;
   }
   
-  ul li {
-    margin: 5px 0;
+  #projects li {
+    background-color: #f0f4f8;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid #007acc;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 5px;
   }
   
+  #projects li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Links Styling */
   a {
-    color: #333;
+    color: #007acc;
     text-decoration: none;
+    font-weight: bold;
   }
   
   a:hover {
-    color: #4CAF50;
+    color: #004c80;
+  }
+  
+  /* About and Contact Section Styling */
+  section#about, section#contact {
+    margin-top: 1.5rem;
+    color: #333;
+  }
+  
+  section p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  footer p {
+    padding: 1rem;
+    background-color: #f0f4f8;
+    border-radius: 10px;
   }
   
